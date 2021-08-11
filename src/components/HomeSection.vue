@@ -1,16 +1,22 @@
 <template>
   <section id="hero">
-    <v-parallax dark src="@/assets/img/bgHero.jpg" height="750">
+    <v-parallax dark src="@/assets/img/background5.jpg" height="750">
       <v-row align="center" justify="center">
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="6" xl="8">
-              <h1 class="display-2 font-weight-bold mb-4">Vuetify.js</h1>
-              <h1 class="font-weight-light">
-                Lorem ipsum dolor sit amet consectetur <br />
-                adipisicing elit. Maiores porro voluptatibus <br />
-                delectus nam optio harum!
-              </h1>
+              <h1 class="display-2 font-weight-bold mb-4">Nutrium</h1>
+              <h3 class="font-weight-light">
+                <strong
+                  >El único software que necesitas para empezar tu plan
+                  alimentación</strong
+                >
+              </h3>
+              <p>
+                Nutrium es un software de nutrición para que los profesionales
+                administren sus negocios mientras se enfocan en el éxito de sus
+                clientes.
+              </p>
               <v-btn
                 rounded
                 outlined
@@ -19,7 +25,7 @@
                 @click="$vuetify.goTo('#features')"
                 class="mt-5"
               >
-                Saiba mais
+                Saber mas...
                 <v-icon class="ml-2">mdi-arrow-down</v-icon>
               </v-btn>
               <div class="video d-flex align-center py-4">
@@ -62,10 +68,16 @@
                     />
                   </svg>
                 </a>
-                <p class="subheading ml-2 mb-0">Assista o vídeo</p>
+                <p class="subheading ml-2 mb-0">Ver video</p>
               </div>
             </v-col>
-            <v-col cols="12" md="6" xl="4" class="hidden-sm-and-down"> </v-col>
+            <v-col cols="12" md="6" xl="4" class="hidden-sm-and-down">
+              <v-img
+                src="@/assets/img/doll.png"
+                class="d-block ml-auto mr-auto"
+                max-width="600px"
+              />
+            </v-col>
           </v-row>
         </v-col>
       </v-row>
@@ -103,10 +115,15 @@
                     class="d-block ml-auto mr-auto"
                     :class="{ 'zoom-efect': hover }"
                   ></v-img>
-                  <h1 class="font-weight-regular">{{ feature.title }}</h1>
+                  <h1 class="font-weight-regular primary--text ">
+                    {{ feature.title }}
+                  </h1>
                   <h4 class="font-weight-regular subtitle-1">
                     {{ feature.text }}
                   </h4>
+                  <v-btn class="my-5" elevation="2" color="#ea9f77">
+                    <span class="white--text">Leer mas...</span>
+                  </v-btn>
                 </v-card>
               </v-hover>
             </v-col>
@@ -137,19 +154,22 @@ export default {
       videoId: "i8IvvHJssWE",
       features: [
         {
-          img: require("@/assets/img/icon2.png"),
-          title: "Design Limpo",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          img: require("@/assets/img/icon1Sb.png"),
+          title: "Administre su plan de alimentación en línea",
+          text:
+            "Trabaje desde cualquier lugar y mantenga todos los datos de sus clientes seguros con nuestros registros médicos electrónicos y funciones de telesalud.",
         },
         {
-          img: require("@/assets/img/icon1.png"),
-          title: "Dados Seguros",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          img: require("@/assets/img/icon2Sb.png"),
+          title: "Olvídese del papel con nuestra aplicación móvil",
+          text:
+            "Ofrezca a sus clientes nuestra aplicación móvil para enviar todas sus recomendaciones y comprobar cómo están trabajando sus clientes hacia sus objetivos.",
         },
         {
-          img: require("@/assets/img/icon3.png"),
-          title: "Código Aberto",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          img: require("@/assets/img/icon3Sb.png"),
+          title: "Gana tiempo para cosas importantes",
+          text:
+            "Nutrium se encarga del análisis nutricional de los diarios y planes de alimentación y calcula las necesidades nutricionales de los clientes.",
         },
       ],
     };
@@ -195,7 +215,6 @@ export default {
 }
 
 .playBut {
-  /*  border: 1px solid red;*/
   display: inline-block;
   -webkit-transition: all 0.5s ease;
 

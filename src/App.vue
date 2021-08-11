@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <navigation :color="color" :flat="flat" />
-    <v-main class="pt-0">
+    <navigation :color="color" :flat="flat"/>
+    <v-main class="pt-0 teal accent-4">
       <home />
       <about />
       <download />
@@ -17,7 +17,7 @@
         fixed
         bottom
         right
-        color="secondary"
+        color="#1ab394"
         @click="toTop"
       >
         <v-icon>mdi-arrow-up</v-icon>
@@ -29,7 +29,7 @@
 
 <style scoped>
 .v-main {
-  background-image: url("~@/assets/img/bgMain.png");
+  background-image: url("~@/assets/img/background5.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -67,7 +67,7 @@ export default {
   created() {
     const top = window.pageYOffset || 0;
     if (top <= 60) {
-      this.color = "transparent";
+      this.color = "white";
       this.flat = true;
     }
   },
@@ -75,7 +75,7 @@ export default {
   watch: {
     fab(value) {
       if (value) {
-        this.color = "secondary";
+        this.color = "white";
         this.flat = false;
       } else {
         this.color = "transparent";

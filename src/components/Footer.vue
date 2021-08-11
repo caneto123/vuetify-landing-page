@@ -1,6 +1,6 @@
 <template>
-  <v-footer dark padless>
-    <v-card flat tile class="secondary white--text text-center">
+  <v-footer dark padless  id="footer">
+    <v-card flat tile class="primary white--text text-center">
       <v-card-text>
         <v-btn
           v-for="(icon, i) in icons"
@@ -22,7 +22,7 @@
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>Calango WEB</strong>
+        {{ new Date().getFullYear() }} — <strong>WEB</strong>
       </v-card-text>
     </v-card>
   </v-footer>
@@ -52,9 +52,17 @@ export default {
       },
       {
         text: "mdi-instagram",
-        link: "https://instagram.com/joabson_arley/",
+        link: "https://instagram.com/caneto_/",
       },
     ],
   }),
 };
 </script>
+
+<style scoped>
+#footer {
+  background-image: url("~@/assets/img/background3.jpg");
+  background-size: cover;
+  height: 200px;
+}
+</style>

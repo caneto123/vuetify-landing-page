@@ -1,10 +1,10 @@
 <template>
   <section id="pricing" class="pb-8">
     <v-container fluid>
-      <v-row align="center" justify="center">
+      <v-row align="center" justify="center" class="mt-6">
         <v-col cols="10">
           <v-card style="width: 100%">
-            <h1 class="text-center pt-6 font-weight-light display-2">Planos</h1>
+            <h1 class="text-center pt-6 primary--text display-2">Precios</h1>
             <v-divider class="my-6"></v-divider>
             <v-row class="text-center">
               <v-col class="col-12 col-sm-6 col-md-4">
@@ -19,21 +19,21 @@
                     </div>
                     <div class="text--disabled text-uppercase text-h5 my-2">Básico</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Domínios personalizados</div>
+                    <div class="text-uppercase blue-grey--text">Domínios personalizados</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Limite de 1000 acessos diários</div>
+                    <div class="text-uppercase blue-grey--text">Limite de 500 acessos mensuales</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Outras características...</div>
+                    <div class="text-uppercase blue-grey--text">Otras características...</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase text-h4 mt-6 blue--text">R$ 20,00</div>
+                    <div class="text-uppercase text-h4 mt-6 blue-grey--text">$ 2000,00</div>
                     <v-btn
                         v-bind="size"
                         rounded
                         outlined
-                        color="blue"
+                        color="blue-grey--text"
                         class="mt-6"
                     >
-                      Comece Agora!
+                      Comience ahora!
                     </v-btn>
                   </v-card-text>
                   <v-divider style="margin-right: -23px" vertical v-if="this.$vuetify.breakpoint.smAndUp"></v-divider>
@@ -50,23 +50,23 @@
                         </div>
                       </div>
                     </div>
-                    <div class="text--disabled text-uppercase text-h5 my-2">Padrão</div>
+                    <div class="text--disabled text-uppercase text-h5 my-2">Personalizados</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Domínios personalizados</div>
+                    <div class="text-uppercase blue-grey--text">Domínios personalizados</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Limite de 10000 acessos diários</div>
+                    <div class="text-uppercase blue-grey--text">Limite de 1000 acessos mensuales</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Outras características...</div>
+                    <div class="text-uppercase blue-grey--text">Otras características...</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase text-h4 mt-6 blue--text">R$ 100,00</div>
+                    <div class="text-uppercase text-h4 mt-6 blue-grey--text">$ 4000,00</div>
                     <v-btn
                         v-bind="size"
                         rounded
                         outlined
-                        color="blue"
+                        color="blue-grey--text"
                         class="mt-6"
                     >
-                      Comece Agora!
+                      Comience ahora!
                     </v-btn>
                   </v-card-text>
                   <v-divider style="margin-right: -23px" vertical v-if="this.$vuetify.breakpoint.mdAndUp"></v-divider>
@@ -85,23 +85,23 @@
                         </div>
                       </div>
                     </div>
-                    <div class="text--disabled text-uppercase text-h5 my-2">Empresarial</div>
+                    <div class="text--disabled text-uppercase text-h5 my-2">Familiares</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Domínios personalizados</div>
+                    <div class="text-uppercase blue-grey--text">Domínios personalizados</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Acessos ilimitados</div>
+                    <div class="text-uppercase blue-grey--text">Acessos ilimitados al mes</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Outras características...</div>
+                    <div class="text-uppercase blue-grey--text">Otras características...</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase text-h4 mt-6 blue--text">R$ 500,00</div>
+                    <div class="text-uppercase text-h4 mt-6 blue-grey--text">$ 6000,00</div>
                     <v-btn
                         v-bind="size"
                         rounded
                         outlined
-                        color="blue"
+                        color="blue-grey--text"
                         class="mt-6"
                     >
-                      Comece Agora!
+                      Comience ahora!
                     </v-btn>
                   </v-card-text>
                 </div>

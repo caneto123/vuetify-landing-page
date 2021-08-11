@@ -10,11 +10,11 @@
       <v-list>
         <v-list-item>
           <v-list-item-avatar>
-            <img src="@/assets/img/logo.png" alt="Logo" />
+            <img src="@/assets/img/nutricionLogo.svg" alt="Logo" />
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title class="title">Calango</v-list-item-title>
-            <v-list-item-subtitle>WEB</v-list-item-subtitle>
+            <v-list-item-title class="title">Panel</v-list-item-title>
+            <!-- <v-list-item-subtitle>Web</v-list-item-subtitle> -->
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -49,7 +49,7 @@
       :class="{ expand: flat }"
     >
       <v-toolbar-title>
-        <v-img src="@/assets/img/logo.png" max-width="50px" />
+        <v-img src="@/assets/img/nutricionLogo.svg" max-width="200px" />
       </v-toolbar-title>
       <v-spacer />
       <v-app-bar-nav-icon
@@ -59,35 +59,28 @@
       />
       <div v-else>
         <v-btn text @click="$vuetify.goTo('#hero')">
-          <span class="mr-2">Home</span>
+          <span class="mr-2 primary--text"> <strong>Home</strong></span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#features')">
-          <span class="mr-2">Sobre</span>
+          <span class="mr-2 primary--text"> <strong>Productos</strong></span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#download')">
-          <span class="mr-2">Download</span>
+          <span class="mr-2 primary--text"> <strong>Planes</strong></span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#pricing')">
-          <span class="mr-2">Preços</span>
+          <span class="mr-2 primary--text"> <strong>Precios</strong></span>
         </v-btn>
-        <v-btn rounded outlined text @click="$vuetify.goTo('#contact')">
-          <span class="mr-2">Contate-nos</span>
+        <v-btn text @click="$vuetify.goTo('#contact')">
+          <span class="mr-2 primary--text"> <strong>Contacto</strong></span>
+        </v-btn>
+        <v-btn elevation="2" color="#ea9f77" type="submit">
+          <v-icon left color="white"> mdi-login </v-icon>
+          <span class="white--text">Iniciar sesión</span>
         </v-btn>
       </div>
     </v-app-bar>
   </div>
 </template>
-
-<style scoped>
-.v-toolbar {
-  transition: 0.6s;
-}
-
-.expand {
-  height: 80px !important;
-  padding-top: 10px;
-}
-</style>
 
 <script>
 export default {
@@ -127,3 +120,14 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.v-toolbar {
+  transition: 0.9s;
+}
+
+.expand {
+  height: 80px !important;
+  padding-top: 10px;
+}
+</style>
