@@ -17,16 +17,31 @@
                         </div>
                       </div>
                     </div>
-                    <div class="text--disabled text-uppercase text-h5 my-2">Básico</div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase blue-grey--text">Domínios personalizados</div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase blue-grey--text">Limite de 500 acessos mensuales</div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase blue-grey--text">Otras características...</div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase text-h4 mt-6 blue-grey--text">$ 2000,00</div>
-                    <v-btn
+                    <div
+                      class="text--disabled text-uppercase text-h5 my-2 blue-grey--text"
+                    >
+                      Básico
+                    </div>
+                    <v-divider class="my-2" />
+                    <div class="text-uppercase blue-grey--text">
+                      Domínios personalizados
+                    </div>
+                    <v-divider class="my-2" />
+                    <div class="text-uppercase blue-grey--text">
+                      Limite de 500 acessos mensuales
+                    </div>
+                    <v-divider class="my-2" />
+                    <div class="text-uppercase blue-grey--text">
+                      Otras características...
+                    </div>
+                    <v-divider class="my-2" />
+                    <div class="text-uppercase text-h4 mt-6 blue-grey--text">
+                      $ 2000,00
+                    </div>
+                    <v-btn class="my-5" elevation="2" color="#ea9f77">
+                      <span class="white--text">Comience ahora</span>
+                    </v-btn>
+                    <!-- <v-btn
                         v-bind="size"
                         rounded
                         outlined
@@ -34,11 +49,18 @@
                         class="mt-6"
                     >
                       Comience ahora!
-                    </v-btn>
+                    </v-btn> -->
                   </v-card-text>
-                  <v-divider style="margin-right: -23px" vertical v-if="this.$vuetify.breakpoint.smAndUp"></v-divider>
+                  <v-divider
+                    style="margin-right: -23px"
+                    vertical
+                    v-if="this.$vuetify.breakpoint.smAndUp"
+                  ></v-divider>
                 </div>
-                <v-divider class="mx-4" v-if="!this.$vuetify.breakpoint.smAndUp"></v-divider>
+                <v-divider
+                  class="mx-4"
+                  v-if="!this.$vuetify.breakpoint.smAndUp"
+                ></v-divider>
               </v-col>
               <v-col class="col-12 col-sm-6 col-md-4">
                 <div class="flex-center">
@@ -46,62 +68,80 @@
                     <div class="flex-center">
                       <div class="circle1">
                         <div class="circle2">
-                          <v-img src="~@/assets/img/airplane.svg"/>
+                          <v-img src="~@/assets/img/airplane.svg" />
                         </div>
                       </div>
                     </div>
-                    <div class="text--disabled text-uppercase text-h5 my-2">Personalizados</div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase blue-grey--text">Domínios personalizados</div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase blue-grey--text">Limite de 1000 acessos mensuales</div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase blue-grey--text">Otras características...</div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase text-h4 mt-6 blue-grey--text">$ 4000,00</div>
-                    <v-btn
-                        v-bind="size"
-                        rounded
-                        outlined
-                        color="blue-grey--text"
-                        class="mt-6"
-                    >
-                      Comience ahora!
+                    <div class="text--disabled text-uppercase text-h5 my-2">
+                      Personalizados
+                    </div>
+                    <v-divider class="my-2" />
+                    <div class="text-uppercase blue-grey--text">
+                      Domínios personalizados
+                    </div>
+                    <v-divider class="my-2" />
+                    <div class="text-uppercase blue-grey--text">
+                      Limite de 1000 acessos mensuales
+                    </div>
+                    <v-divider class="my-2" />
+                    <div class="text-uppercase blue-grey--text">
+                      Otras características...
+                    </div>
+                    <v-divider class="my-2" />
+                    <div class="text-uppercase text-h4 mt-6 blue-grey--text">
+                      $ 4000,00
+                    </div>
+                    <v-btn class="my-5" elevation="2" color="#ea9f77">
+                      <span class="white--text">Comience ahora</span>
                     </v-btn>
                   </v-card-text>
-                  <v-divider style="margin-right: -23px" vertical v-if="this.$vuetify.breakpoint.mdAndUp"></v-divider>
+                  <v-divider
+                    style="margin-right: -23px"
+                    vertical
+                    v-if="this.$vuetify.breakpoint.mdAndUp"
+                  ></v-divider>
                 </div>
-                <v-divider class="mx-4" v-if="!this.$vuetify.breakpoint.smAndUp"></v-divider>
+                <v-divider
+                  class="mx-4"
+                  v-if="!this.$vuetify.breakpoint.smAndUp"
+                ></v-divider>
               </v-col>
               <v-col class="col-12 col-md-4">
-                <v-divider v-if="this.$vuetify.breakpoint.smOnly" class="mx-4"></v-divider>
+                <v-divider
+                  v-if="this.$vuetify.breakpoint.smOnly"
+                  class="mx-4"
+                ></v-divider>
 
                 <div class="flex-center">
                   <v-card-text>
                     <div class="flex-center">
                       <div class="circle1">
                         <div class="circle2">
-                          <v-img src="~@/assets/img/aeroplane.svg"/>
+                          <v-img src="~@/assets/img/aeroplane.svg" />
                         </div>
                       </div>
                     </div>
-                    <div class="text--disabled text-uppercase text-h5 my-2">Familiares</div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase blue-grey--text">Domínios personalizados</div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase blue-grey--text">Acessos ilimitados al mes</div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase blue-grey--text">Otras características...</div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase text-h4 mt-6 blue-grey--text">$ 6000,00</div>
-                    <v-btn
-                        v-bind="size"
-                        rounded
-                        outlined
-                        color="blue-grey--text"
-                        class="mt-6"
-                    >
-                      Comience ahora!
+                    <div class="text--disabled text-uppercase text-h5 my-2">
+                      Familiares
+                    </div>
+                    <v-divider class="my-2" />
+                    <div class="text-uppercase blue-grey--text">
+                      Domínios personalizados
+                    </div>
+                    <v-divider class="my-2" />
+                    <div class="text-uppercase blue-grey--text">
+                      Acessos ilimitados al mes
+                    </div>
+                    <v-divider class="my-2" />
+                    <div class="text-uppercase blue-grey--text">
+                      Otras características...
+                    </div>
+                    <v-divider class="my-2" />
+                    <div class="text-uppercase text-h4 mt-6 blue-grey--text">
+                      $ 6000,00
+                    </div>
+                    <v-btn class="my-5" elevation="2" color="#ea9f77">
+                      <span class="white--text">Comience ahora</span>
                     </v-btn>
                   </v-card-text>
                 </div>
@@ -123,13 +163,13 @@
         />
       </svg> -->
       <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-          preserveAspectRatio="none"
-          fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none"
+        fill="currentColor"
       >
         <path
-            d="M0,64L80,90.7C160,117,320,171,480,181.3C640,192,800,160,960,138.7C1120,117,1280,107,1360,101.3L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          d="M0,64L80,90.7C160,117,320,171,480,181.3C640,192,800,160,960,138.7C1120,117,1280,107,1360,101.3L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
         ></path>
       </svg>
     </div>
@@ -178,7 +218,7 @@ ul {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  background-color: #f0f8ff;
+  background-color: #ffede0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,7 +228,7 @@ ul {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  background-color: #e0effc;
+  background-color: #ffe5e0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -344,11 +384,11 @@ export default {
   }),
   computed: {
     size() {
-      const size = {md: "large", xl: "x-large"}[
-          this.$vuetify.breakpoint.name
-          ];
-      return size ? {[size]: true} : {};
-    }
+      const size = { md: "large", xl: "x-large" }[
+        this.$vuetify.breakpoint.name
+      ];
+      return size ? { [size]: true } : {};
+    },
   },
 };
 </script>

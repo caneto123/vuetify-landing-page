@@ -49,7 +49,7 @@
       :class="{ expand: flat }"
     >
       <v-toolbar-title>
-        <v-img src="@/assets/img/nutricionLogo.svg" max-width="200px" />
+        <v-img src="@/assets/img/nutricionLogo.svg" max-width="200px"/>
       </v-toolbar-title>
       <v-spacer />
       <v-app-bar-nav-icon

@@ -32,6 +32,7 @@
   background-image: url("~@/assets/img/background5.jpg");
   background-attachment: fixed;
   background-position: center;
+
   background-size: cover;
 }
 </style>

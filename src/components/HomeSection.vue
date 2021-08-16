@@ -1,74 +1,75 @@
 <template>
   <section id="hero">
-    <v-parallax dark src="@/assets/img/background5.jpg" height="750">
+    <v-parallax dark src="@/assets/img/background2.jpg" height="750">
       <v-row align="center" justify="center">
         <v-col cols="10">
           <v-row align="center" justify="center">
-            <v-col cols="12" md="6" xl="8">
-              <h1 class="display-2 font-weight-bold mb-4">Nutrium</h1>
-              <h3 class="font-weight-light">
+            <v-col cols="12" md="6" xl="8" font-size="96">
+              <h1 class="font-weight-light textOne" xl="8">
                 <strong
                   >El único software que necesitas para empezar tu plan
                   alimentación</strong
                 >
-              </h3>
+              </h1>
               <p>
                 Nutrium es un software de nutrición para que los profesionales
                 administren sus negocios mientras se enfocan en el éxito de sus
                 clientes.
               </p>
-              <v-btn
-                rounded
-                outlined
-                large
-                dark
-                @click="$vuetify.goTo('#features')"
-                class="mt-5"
-              >
-                Saber mas...
-                <v-icon class="ml-2">mdi-arrow-down</v-icon>
-              </v-btn>
-              <div class="video d-flex align-center py-4">
-                <a @click.stop="dialog = true" class="playBut">
-                  <svg
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-                    x="0px"
-                    y="0px"
-                    width="60px"
-                    height="60px"
-                    viewBox="0 0 213.7 213.7"
-                    enable-background="new 0 0 213.7 213.7"
-                    xml:space="preserve"
-                  >
-                    <polygon
-                      class="triangle"
-                      id="XMLID_18_"
-                      fill="none"
-                      stroke-width="7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-miterlimit="10"
-                      points="73.5,62.5 148.5,105.8 73.5,149.1 "
-                    />
+              <div class="row">
+                <v-btn
+                  rounded
+                  outlined
+                  large
+                  dark
+                  @click="$vuetify.goTo('#features')"
+                  class="mt-5"
+                >
+                  Saber mas...
+                  <v-icon class="ml-2">mdi-arrow-down</v-icon>
+                </v-btn>
+                <div class="video d-flex align-center py-4 mx-5">
+                  <a @click.stop="dialog = true" class="playBut">
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                      x="0px"
+                      y="0px"
+                      width="60px"
+                      height="60px"
+                      viewBox="0 0 213.7 213.7"
+                      enable-background="new 0 0 213.7 213.7"
+                      xml:space="preserve"
+                    >
+                      <polygon
+                        class="triangle"
+                        id="XMLID_18_"
+                        fill="none"
+                        stroke-width="7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                        points="73.5,62.5 148.5,105.8 73.5,149.1 "
+                      />
 
-                    <circle
-                      class="circle"
-                      id="XMLID_17_"
-                      fill="none"
-                      stroke-width="7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-miterlimit="10"
-                      cx="106.8"
-                      cy="106.8"
-                      r="103.3"
-                    />
-                  </svg>
-                </a>
-                <p class="subheading ml-2 mb-0">Ver video</p>
+                      <circle
+                        class="circle"
+                        id="XMLID_17_"
+                        fill="none"
+                        stroke-width="7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                        cx="106.8"
+                        cy="106.8"
+                        r="103.3"
+                      />
+                    </svg>
+                  </a>
+                  <p class="subheading ml-2 mb-0">Ver video</p>
+                </div>
               </div>
             </v-col>
             <v-col cols="12" md="6" xl="4" class="hidden-sm-and-down">
@@ -104,7 +105,7 @@
             >
               <v-hover v-slot:default="{ hover }">
                 <v-card
-                  class="card"
+                  class="card mt-6"
                   shaped
                   :elevation="hover ? 10 : 4"
                   :class="{ up: hover }"
@@ -115,14 +116,14 @@
                     class="d-block ml-auto mr-auto"
                     :class="{ 'zoom-efect': hover }"
                   ></v-img>
-                  <h1 class="font-weight-regular primary--text ">
+                  <h1 class="font-weight-regular primary--text">
                     {{ feature.title }}
                   </h1>
-                  <h4 class="font-weight-regular subtitle-1">
+                  <h4 class="font-weight-regular subtitle-1 blue-grey--text">
                     {{ feature.text }}
                   </h4>
                   <v-btn class="my-5" elevation="2" color="#ea9f77">
-                    <span class="white--text">Leer mas...</span>
+                    <span class="white--text">Leer mas</span>
                   </v-btn>
                 </v-card>
               </v-hover>
@@ -206,6 +207,18 @@ export default {
 </script>
 
 <style lang="scss">
+section {
+  position: relative;
+}
+
+#hero {
+  z-index: 0;
+}
+
+.textOne {
+  font-size: 3rem;
+  font-family: unquote("Roboto");
+}
 .circle {
   stroke: white;
   stroke-dasharray: 650;
@@ -258,9 +271,7 @@ export default {
     }
   }
 }
-</style>
 
-<style>
 .btn-play {
   transition: 0.2s;
 }
@@ -274,9 +285,6 @@ export default {
   overflow: hidden;
 }
 
-#hero {
-  z-index: 0;
-}
 .svg-border-waves img {
   position: absolute;
   bottom: 0;
@@ -287,13 +295,14 @@ export default {
 }
 
 .card {
-  min-height: 300px;
+  min-height: 200px;
   padding: 10px;
   transition: 0.5s ease-out;
 }
 
 .card .v-image {
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   transition: 0.75s;
 }
 
@@ -306,13 +315,7 @@ export default {
 }
 
 .up {
-  transform: translateY(-20px);
+  transform: translateY(-30px);
   transition: 0.5s ease-out;
-}
-</style>
-
-<style>
-section {
-  position: relative;
 }
 </style>

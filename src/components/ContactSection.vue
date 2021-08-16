@@ -5,25 +5,35 @@
         <v-col cols="10">
           <v-row justify="center">
             <v-col cols="12" sm="5">
-              <h1 class="font-weight-light display-1">Contáctenos</h1>
-              <h3 class="font-weight-light mt-3">
+              <h1 class="font-weight-light display-1 mb-3 primary--text my-5">
+                Contáctenos
+              </h1>
+              <h3 class=" font-weight-light blue-grey--text mt-3">
                 Compruebe todo lo que un software de planificación de comidas
                 puede ser para usted. No solo es un software de análisis de
                 nutrientes, sino que también le permite crear planes de comidas
                 y recetas, administrar todas sus citas y clientes e incluso
                 crear su propio sitio web.
               </h3>
-              <h3 class="font-weight-light mt-3">
+              <!-- <h1 class="font-weight-light display-1 "></h1>
+              <h3 class="font-weight-light ">
+                Compruebe todo lo que un software de planificación de comidas
+                puede ser para usted. No solo es un software de análisis de
+                nutrientes, sino que también le permite crear planes de comidas
+                y recetas, administrar todas sus citas y clientes e incluso
+                crear su propio sitio web.
+              </h3> -->
+              <h3 class="font-weight-light blue-grey--text mt-3">
                 Todo al alcance de un click!
               </h3>
-              <h3 class="font-weight-light mt-3">
-                Teléfono:  +598 (09X) XXXXXX
+              <h3 class="font-weight-light blue-grey--text mt-3">
+                <strong> Teléfono: +598 (09X) XXXXXX</strong> 
               </h3>
-              <h3 class="font-weight-light">
-                Email: email@email.com
+              <h3 class="font-weight-light blue-grey--text mt-3">
+                <strong>Email: email@email.com</strong> 
               </h3>
             </v-col>
-            <v-col cols="12" sm="7">
+            <v-col cols="12" sm="7" class="blue-grey--text">
               <v-form ref="form" v-model="valid" :lazy-validation="lazy">
                 <v-text-field
                   v-model="name"
@@ -31,23 +41,19 @@
                   label="Nombre"
                   required
                 ></v-text-field>
-
                 <v-text-field
                   v-model="email"
                   :rules="emailRules"
                   label="E-mail"
                   required
                 ></v-text-field>
-
                 <v-textarea
                   v-model="textArea"
                   :rules="textAreaRules"
                   label="Mensaje"
                   required
                 />
-
                 <v-btn
-                  :disabled="!valid"
                   color="primary"
                   :dark="valid"
                   rounded
