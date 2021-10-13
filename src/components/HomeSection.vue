@@ -5,13 +5,13 @@
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="6" xl="8">
-              <h1 class="display-2 font-weight-bold mb-4">Tecnica</h1>
+              <h1 class="display-2 font-weight-bold mb-4">Grupo Sel</h1>
               <h1 class="font-weight-light">
-                Lorem ipsum dolor sit amet consectetur <br />
-                adipisicing elit. Maiores porro voluptatibus <br />
-                delectus nam optio harum!
+                 <br />
+                 <strong>Seguridad innovadora a la medida de cada cliente.</strong>  <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos ipsa placeat eligendi ea non dignissimos commodi minus illum quibusdam adipisci consectetur modi nemo, assumenda quo earum aperiam nihil iure? Ipsam.
               </h1>
-              <v-btn
+              <!-- <v-btn
                 rounded
                 outlined
                 large
@@ -21,8 +21,8 @@
               >
                 Saiba mais
                 <v-icon class="ml-2">mdi-arrow-down</v-icon>
-              </v-btn>
-              <div class="video d-flex align-center py-4">
+              </v-btn> -->
+              <!-- <div class="video d-flex align-center py-4">
                 <a @click.stop="dialog = true" class="playBut">
                   <svg
                     version="1.1"
@@ -62,8 +62,8 @@
                     />
                   </svg>
                 </a>
-                <p class="subheading ml-2 mb-0">Assista o vídeo</p>
-              </div>
+
+              </div> -->
             </v-col>
             <v-col cols="12" md="6" xl="4" class="hidden-sm-and-down"> </v-col>
           </v-row>
@@ -114,7 +114,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-dialog v-model="dialog" max-width="640px">
+    <!-- <v-dialog v-model="dialog" max-width="640px">
       <v-card>
         <youtube
           :video-id="videoId"
@@ -122,10 +122,10 @@
           @playing="playing"
         ></youtube>
       </v-card>
-    </v-dialog>
-    <div class="svg-border-waves">
+    </v-dialog> -->
+    <!-- <div class="svg-border-waves">
       <img src="~@/assets/img/wave2.svg" />
-    </div>
+    </div> -->
   </section>
 </template>
 
