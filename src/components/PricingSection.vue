@@ -17,15 +17,15 @@
                         </div>
                       </div>
                     </div>
-                    <div class="text--disabled text-uppercase text-h5 my-2">Básico</div>
+                    <div class="text--disabled text-uppercase text-h5 my-2">Alamas</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Domínios personalizados</div>
+                    <div class="text-uppercase blue--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Limite de 1000 acessos diários</div>
+                    <div class="text-uppercase blue--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Outras características...</div>
+                    <div class="text-uppercase blue--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase text-h4 mt-6 blue--text">R$ 20,00</div>
+                    <div class="text-uppercase text-h4 mt-6 blue--text">$ 20,00</div>
                     <v-btn
                         v-bind="size"
                         rounded
@@ -33,7 +33,7 @@
                         color="blue"
                         class="mt-6"
                     >
-                      Comece Agora!
+                      Comience ahora!
                     </v-btn>
                   </v-card-text>
                   <v-divider style="margin-right: -23px" vertical v-if="this.$vuetify.breakpoint.smAndUp"></v-divider>
@@ -50,15 +50,15 @@
                         </div>
                       </div>
                     </div>
-                    <div class="text--disabled text-uppercase text-h5 my-2">Padrão</div>
+                    <div class="text--disabled text-uppercase text-h5 my-2">Seguridad</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Domínios personalizados</div>
+                    <div class="text-uppercase blue--text"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Limite de 10000 acessos diários</div>
+                    <div class="text-uppercase blue--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Outras características...</div>
+                    <div class="text-uppercase blue--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase text-h4 mt-6 blue--text">R$ 100,00</div>
+                    <div class="text-uppercase text-h4 mt-6 blue--text">$ 100,00</div>
                     <v-btn
                         v-bind="size"
                         rounded
@@ -66,7 +66,7 @@
                         color="blue"
                         class="mt-6"
                     >
-                      Comece Agora!
+                      Comience ahora!
                     </v-btn>
                   </v-card-text>
                   <v-divider style="margin-right: -23px" vertical v-if="this.$vuetify.breakpoint.mdAndUp"></v-divider>
@@ -85,15 +85,15 @@
                         </div>
                       </div>
                     </div>
-                    <div class="text--disabled text-uppercase text-h5 my-2">Empresarial</div>
+                    <div class="text--disabled text-uppercase text-h5 my-2">Vigilancia</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Domínios personalizados</div>
+                    <div class="text-uppercase blue--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Acessos ilimitados</div>
+                    <div class="text-uppercase blue--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text">Outras características...</div>
+                    <div class="text-uppercase blue--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                     <v-divider class="my-2"/>
-                    <div class="text-uppercase text-h4 mt-6 blue--text">R$ 500,00</div>
+                    <div class="text-uppercase text-h4 mt-6 blue--text">$ 500,00</div>
                     <v-btn
                         v-bind="size"
                         rounded
@@ -101,7 +101,7 @@
                         color="blue"
                         class="mt-6"
                     >
-                      Comece Agora!
+                      Comience ahora!
                     </v-btn>
                   </v-card-text>
                 </div>
