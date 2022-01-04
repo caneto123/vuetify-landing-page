@@ -5,53 +5,58 @@
         <v-col cols="10">
           <v-row justify="center">
             <v-col cols="12" sm="5">
-              <h1 class="font-weight-light display-1">Contate-nos</h1>
+              <h1 class="font-weight-light display-1">Contáctenos</h1>
               <h3 class="font-weight-light mt-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                explicabo commodi quisquam asperiores dolore ad enim provident
-                veniam perferendis voluptate, perspiciatis.
+                Ingresá tus datos y te contactamos o si preferís llamanos al 098 XX XX XX y te asesoramos.
               </h3>
-              <h3 class="font-weight-light mt-3">
+              <!-- <h3 class="font-weight-light mt-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing.
               </h3>
               <h3 class="font-weight-light mt-3">
-                Telefone: +xx (xx) xxxxx-xxxx
-              </h3>
-              <h3 class="font-weight-light">
-                Email: email@email.com
+                Telefone: +598 14 07 14
+              </h3> -->
+              <h3 class="font-weight-light mt-3">
+                Email: EduardoYChristian@gmail.com
               </h3>
             </v-col>
             <v-col cols="12" sm="7">
               <v-form ref="form" v-model="valid" :lazy-validation="lazy">
                 <v-text-field
-                    v-model="name"
-                    :rules="nameRules"
-                    label="Nome"
-                    required
+                  v-model="name"
+                  :rules="nameRules"
+                  label="Nombre"
+                  required
                 ></v-text-field>
 
                 <v-text-field
-                    v-model="email"
-                    :rules="emailRules"
-                    label="E-mail"
-                    required
+                  v-model="email"
+                  :rules="emailRules"
+                  label="E-mail"
+                  required
+                ></v-text-field>
+
+                <v-text-field
+                  v-model="name"
+                  :rules="nameRules"
+                  label="Teléfono"
+                  required
                 ></v-text-field>
 
                 <v-textarea
-                    v-model="textArea"
-                    :rules="textAreaRules"
-                    label="Mensagem"
-                    required
+                  v-model="textArea"
+                  :rules="textAreaRules"
+                  label="Mensaje"
+                  required
                 />
 
                 <v-btn
-                    :disabled="!valid"
-                    color="primary"
-                    :dark="valid"
-                    rounded
-                    block
-                    class="mt-3"
-                    @click="submit"
+                  :disabled="!valid"
+                  color="primary"
+                  :dark="valid"
+                  rounded
+                  block
+                  class="mt-3"
+                  @click="submit"
                 >
                   Enviar
                 </v-btn>
@@ -62,23 +67,19 @@
       </v-row>
     </v-container>
     <div class="svg-border-waves text-white">
-      <v-img src="~@/assets/img/borderWavesBlue.svg"/>
+      <v-img src="~@/assets/img/borderWavesBlue.svg" />
     </div>
     <v-snackbar
-        v-model="snackbar.enabled"
-        timeout="3000"
-        right
-        top
-        :color="snackbar.color"
+      v-model="snackbar.enabled"
+      timeout="3000"
+      right
+      top
+      :color="snackbar.color"
     >
       {{ snackbar.text }}
 
       <template v-slot:action="{ attrs }">
-        <v-btn
-            text
-            v-bind="attrs"
-            @click="snackbar.enabled = false"
-        >
+        <v-btn text v-bind="attrs" @click="snackbar.enabled = false">
           Fechar
         </v-btn>
       </template>
@@ -99,7 +100,6 @@
   width: 100%;
   overflow: hidden;
 }
-
 </style>
 
 <script>
@@ -127,9 +127,9 @@ export default {
     lazy: false,
     snackbar: {
       enabled: false,
-      text: '',
-      color: ''
-    }
+      text: "",
+      color: "",
+    },
   }),
   methods: {
     submit() {
@@ -146,7 +146,7 @@ export default {
         this.snackbar.color = "danger"
         this.snackbar.enabled = true
       })*/
-    }
-  }
+    },
+  },
 };
 </script>
