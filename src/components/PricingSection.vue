@@ -13,7 +13,7 @@
                     <div class="flex-center">
                       <div class="circle1">
                         <div class="circle2">
-                          <v-img src="~@/assets/img/paperplane.svg"></v-img>
+                          <v-img src="~@/assets/img/alarm-light-outline.svg"></v-img>
                         </div>
                       </div>
                     </div>
@@ -46,7 +46,7 @@
                     <div class="flex-center">
                       <div class="circle1">
                         <div class="circle2">
-                          <v-img src="~@/assets/img/airplane.svg"/>
+                          <v-img src="~@/assets/img/security-network.svg"/>
                         </div>
                       </div>
                     </div>

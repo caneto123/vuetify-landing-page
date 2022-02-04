@@ -50,15 +50,19 @@
                 />
 
                 <v-btn
-                  :disabled="!valid"
-                  color="primary"
+                  :enable="!valid"
+                  color="#171b34"
                   :dark="valid"
                   rounded
                   block
-                  class="mt-3"
+                  class="mt-3 "
                   @click="submit"
+                  
                 >
-                  Enviar
+                <span class="test"
+                
+                >Enviar</span>
+                  
                 </v-btn>
               </v-form>
             </v-col>
@@ -92,6 +96,10 @@
   background-color: #f4f7f5;
 }
 
+.test{
+  color: #f4f7f5;
+}
+
 .svg-border-waves .v-image {
   position: absolute;
   bottom: 0;
@@ -103,6 +111,36 @@
 </style>
 
 <script>
+import useVuelidate from '@vuelidate/core'
+import { required, email } from '@vuelidate/validators'
+
+export default {
+  setup () {
+    return { v$: useVuelidate() }
+  },
+  data () {
+    return {
+      firstName: '',
+      lastName: '',
+      contact: {
+        email: ''
+      }
+    }
+  },
+  validations () {
+    return {
+      firstName: { required }, // Matches this.firstName
+      lastName: { required }, // Matches this.lastName
+      contact: {
+        email: { required, email } // Matches this.contact.email
+      }
+    }
+  }
+}
+</script>
+
+
+// <script>
 // import {db} from '@/main'
 
 export default {

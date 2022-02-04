@@ -7,9 +7,15 @@
             <v-col cols="12" md="6" xl="8">
               <h1 class="display-2 font-weight-bold mb-4">Grupo Sel</h1>
               <h1 class="font-weight-light">
-                 <br />
-                 <strong>Seguridad innovadora a la medida de cada cliente.</strong>  <br>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos ipsa placeat eligendi ea non dignissimos commodi minus illum quibusdam adipisci consectetur modi nemo, assumenda quo earum aperiam nihil iure? Ipsam.
+                <br />
+                <strong
+                  >Seguridad innovadora a la medida de cada cliente.</strong
+                >
+                <br />
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+                ipsa placeat eligendi ea non dignissimos commodi minus illum
+                quibusdam adipisci consectetur modi nemo, assumenda quo earum
+                aperiam nihil iure? Ipsam.
               </h1>
               <!-- <v-btn
                 rounded
@@ -137,19 +143,26 @@ export default {
       videoId: "i8IvvHJssWE",
       features: [
         {
-          img: require("@/assets/img/icon2.png"),
-          title: "Design Limpo",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+
+                          // <v-img src="~@/assets/img/paperplane.svg"></v-img>
+
+          // img: require("@/assets/img/cctv-camera.jpg"),
+          img: require("@/assets/img/cctv.svg"),
+          title: "Sistema de Video Vigilancia",
+          text:
+            "Permite un monitoreo proactivo (respaldo en tiempo real) y reactivo (Graba y luego se chequea)",
         },
         {
-          img: require("@/assets/img/icon1.png"),
-          title: "Dados Seguros",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          img: require("@/assets/img/lock-clock.svg"),
+          title: "Control de acceso",
+          text:
+            "Control automático de restricción de quien puede entrar en determinado lugar y en determinado momento.",
         },
         {
-          img: require("@/assets/img/icon3.png"),
-          title: "Código Aberto",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          img: require("@/assets/img/shield-account.svg"),
+          title: "Detección perimetral de intrusos",
+          text:
+            "Integración de elementos y sistemas, tanto electrónicos como mecánicos, para la protección de perímetros físicos.",
         },
       ],
     };
